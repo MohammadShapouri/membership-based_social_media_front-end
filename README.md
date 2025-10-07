@@ -14,9 +14,9 @@ Run the following commands:
 ```
 
 # Screenshots:
-[1](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/1.png?raw=true)
-[2](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/2.png?raw=true)
-[3](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/3.png?raw=true)
-[4](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/4.png?raw=true)
-[5](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/5.png?raw=true)
+![1](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/1.png?raw=true)
+![2](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/2.png?raw=true)
+![3](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/3.png?raw=true)
+![4](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/4.png?raw=true)
+![5](https://github.com/MohammadShapouri/membership-based_social_media_front-end/blob/main/readme_media/5.png?raw=true)
 
