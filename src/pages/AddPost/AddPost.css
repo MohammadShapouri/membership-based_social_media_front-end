@@ -1,0 +1,169 @@
+.post-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: var(--label-color);
+  background-color: var(--trends-hover-bg);
+}
+
+.form-group-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  /* Softer background */
+  background-color: #f7f9fa; /* light gray, not pure white */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  /* Make text readable */
+  color: #333;
+
+  /* Smooth focus effect */
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.post-form h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.post-form textarea,
+.post-form input[type="text"],
+.post-form input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.file-list {
+  margin-top: 8px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
+.post-form button {
+  /* background: #1976d2; */
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.post-form button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.file-box {
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  padding: 6px;
+  text-align: center;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-preview {
+  color: #aaa;
+  font-size: 0.85em;
+}
+
+.add-file-btn:hover {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.file-slot .preview img,
+.file-slot .preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or cover if you want them to fill completely */
+  border-radius: 4px;
+  display: block;
+}
+
+.preview p {
+  display: none;
+}
+
+.file-slot {
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-slot .preview img,
+.file-slot .preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.add-file-btn {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  padding: 2px 6px;
+  font-size: 1em;
+  background-color: transparent; /* fully transparent */
+  color: white;
+  border: none; /* remove border */
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.2s;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); /* keeps text readable */
+}
+
+.add-file-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle hover effect */
+}
+
+/* Optional: smaller circular button if slot is empty */
+.add-file-btn:not(.filled) {
+  font-size: 1.5em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+}

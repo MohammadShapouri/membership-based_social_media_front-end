@@ -1,0 +1,83 @@
+.edit-profile__background {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--profile-top);
+}
+.edit-profile__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.edit-profile__background input {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.edit-profile__container {
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.edit-profile__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-profile__avatar input {
+  margin-top: 10px;
+}
+.edit-profile__container > * {
+  margin: 5px 0;
+  width: 65%;
+}
+.update-button {
+  width: 20%;
+  height: 3vw;
+}
+.edit-profile__fields {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-profile__fields-row {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.edit-profile__field {
+  flex: 1; /* Each field takes equal width */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: make responsive for smaller screens */
+@media (max-width: 768px) {
+  .edit-profile__fields-row {
+    flex-direction: column;
+  }
+}
+.edit-profile__field select {
+  width: 100%;
+  padding: 10px 12px;             /* match input padding */
+  border: 1px;         /* match input border */
+  border-radius: 35px;             /* match input border radius */
+  background-color: var(--input-back);
+  font-size: 14px;                /* match input font size */
+  color: var(--c-text-color);                    /* match input text color */
+  outline: none;
+  box-sizing: border-box;
+}
+
+.edit-profile__field select:focus {
+  border-color: #007bff;          /* match input focus color */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2); /* optional focus effect */
+}

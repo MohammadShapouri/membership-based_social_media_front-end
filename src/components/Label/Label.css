@@ -1,0 +1,8 @@
+.field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--label-color);
+  transition: color 0.3s ease;
+}

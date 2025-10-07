@@ -1,0 +1,36 @@
+.new-comment-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 12px 0 20px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--trends-hover-bg);
+}
+
+.new-comment-box textarea {
+  flex: 1;
+  min-height: 20px;
+  max-height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  resize: vertical;
+  font-size: 0.95rem;
+  color: var(--option-color);
+}
+
+.new-comment-box button {
+  align-self: flex-start;
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-comment-box button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}

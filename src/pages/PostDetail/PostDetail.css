@@ -1,0 +1,158 @@
+.posts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  background: var(--trends-hover-bg, #fff);
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid #e5e7eb; */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.user-info-side {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.hamburger {
+  position: relative;
+  margin-right: 15px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative
+}
+
+.post-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-caption {
+  font-size: 14px;
+  color: var(--label-color);
+}
+
+.post-files {
+  margin-top: 10px;
+  position: relative;
+}
+
+.post-file-preview {
+  position: relative;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blurred-post-image {
+  width: 100%;
+  max-height: 400px;
+  background: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-weight: bold;
+  filter: blur(8px);
+}
+
+.post-image-count {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.post-footer {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.no-posts-center {
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+}
+
+.comments-stat {
+    color: var(--label-color) !important;
+}
+
+.post-notfound-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  color: #555;
+  font-size: 36px; /* Big text */
+  font-weight: bold;
+}
+
+.comment-notfound-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #555;
+  font-size: 28px;
+  font-weight: lighter;
+  margin-top: 25px;
+}
+
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.menu-popup {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 8px;
+}
+
+.hamburger-menu-items {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+}
+

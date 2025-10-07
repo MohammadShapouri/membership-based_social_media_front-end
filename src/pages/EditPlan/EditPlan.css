@@ -1,0 +1,86 @@
+.add-plan-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.add-plan-form .form-group {
+  margin-bottom: 15px;
+}
+
+.add-plan-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-plan-form input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.plan-summary {
+  margin-bottom: 20px;
+}
+
+.add-plan-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  /* Softer background */
+  background-color: #f7f9fa; /* light gray, not pure white */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  /* Make text readable */
+  color: #333;
+
+  /* Smooth focus effect */
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.add-plan-form input:focus {
+  outline: none;
+  border-color: #1da1f2;       /* match your accent (Twitter blue from SVG?) */
+  background-color: #fff;      /* brighten slightly when active */
+}
+
+.create-plan-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  /* Gradient background */
+  background: linear-gradient(135deg, #1da1f2, #0077b6);
+  color: #fff;
+  text-align: center;
+
+  /* Smooth animation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-plan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
+}
+
+.create-plan-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(29, 161, 242, 0.2);
+}
+
+.create-plan-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}

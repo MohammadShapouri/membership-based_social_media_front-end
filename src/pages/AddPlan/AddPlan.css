@@ -1,0 +1,204 @@
+.post-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.post-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.post-form input[type="text"],
+.post-form textarea,
+.post-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f7f9fa;
+  color: #333;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.post-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+  outline: none;
+  border-color: #1da1f2;
+  background-color: #fff;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.file-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-box input[type="file"] {
+  margin-bottom: 8px;
+}
+
+.preview {
+  width: 100%;
+  /* border: 1px solid #ddd; */
+  border-radius: 6px;
+  overflow: hidden;
+  /* background: #fafafa; */
+  padding: 5px;
+  text-align: center;
+}
+
+.preview img,
+.preview video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 6px;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.create-post-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1da1f2, #0077b6);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-post-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
+}
+
+.create-post-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.caption-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.char-counter {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.post-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f7f9fa;
+  color: #333;
+}
+.post-form select:focus {
+  outline: none;
+  border-color: #1da1f2;
+  background-color: #fff;
+}
+
+/* Wrap group nicely */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+/* Hide default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom box */
+.custom-checkbox {
+  position: relative;
+  padding-left: 28px; /* space for the box */
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+  color: var(--label-color);
+}
+
+/* The box itself */
+.custom-checkbox .checkmark {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 18px;
+  width: 18px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease;
+}
+
+/* When checked */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #1da1f2; /* twitter blue */
+  border-color: #1da1f2;
+}
+
+/* Add tick */
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.custom-checkbox .checkmark::after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

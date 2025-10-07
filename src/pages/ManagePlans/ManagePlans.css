@@ -1,0 +1,164 @@
+.manage-plans-container {
+  padding: 24px;
+}
+
+.manage-plans-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.add-plan-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.plans-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  background: var(--trends-hover-bg, #fff);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.plan-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.plan-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--c-text-color, #222);
+}
+
+.plan-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.plan-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.plan-btn.edit {
+  background: #eef6ff;
+  color: #2563eb;
+}
+
+.plan-btn.edit:hover {
+  background: #dbeafe;
+}
+
+.plan-btn.delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.plan-btn.delete:hover {
+  background: #fecaca;
+}
+
+.plan-info p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: var(--c-text-color, #444);
+}
+
+.no-plans-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px); /* center in page (minus header) */
+  text-align: center;
+}
+
+.no-plans-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #555;
+}
+
+.no-plans-icon {
+  color: #9ca3af; /* gray-400 */
+}
+
+.no-plans-content p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  margin-top: 20px;       /* spacing from plan list */
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-plan-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  /* Gradient background */
+  background: linear-gradient(135deg, #1da1f2, #0077b6);
+  color: #fff;
+  text-align: center;
+
+  /* Smooth animation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-plan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
+}
+
+.create-plan-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(29, 161, 242, 0.2);
+}
+
+.create-plan-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}

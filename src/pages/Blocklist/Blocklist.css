@@ -1,0 +1,75 @@
+.block-list-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.block-list-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  color: rgba(100, 100, 100, 0.8);
+  text-align: center;
+}
+
+.block-list-empty h2 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.block-list-empty p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.block-list-page-header {
+  margin: 5px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* push items to left/right edges */
+  gap: 10px; /* optional spacing between title and search */
+}
+
+.block-list-page-title {
+  font-size: 1.8rem;      /* larger font */
+  color: var(--primary);  /* use your main blue color */
+  position: relative;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.block-list-page-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;               /* underline thickness */
+  width: 50px;               /* underline length */
+  background-color: var(--primary); /* same as text or accent color */
+  border-radius: 2px;
+}
+
+.block-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes button to right */
+  padding: 10px;
+}
+
+.block-list-info-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  flex: 1; /* take up remaining space */
+}
+
+.block-list-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
